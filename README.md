@@ -26,4 +26,4 @@ This website is created by [Kim Yu Ng] (http://twitter.com/kimyu92)
 * Alex Ng
 
 ## Copyright and License
-Copyright 2013 MASA UT, Inc under the MIT license.
+Copyright 2013 MASA UT, Inc under the [MIT license] (MIT-LICENSE.txt).
