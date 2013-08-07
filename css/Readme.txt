@@ -1,0 +1,1 @@
+style.css is taken from bittorrent as a porting base for navbar
