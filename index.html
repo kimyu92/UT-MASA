@@ -33,6 +33,25 @@
 	<!--Officer Script-->
 	<script src="js/officer.js"></script>
 	
+	<!--Google Analytic-->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			},
+			i[r].l = 1 * new Date();
+			a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-43007578-1', 'utmasa.com');
+		ga('send', 'pageview');
+	</script>
+	
   </head>
 
   <body>	
@@ -79,16 +98,17 @@
         <div class="col-lg-4">
           <h2>Prospective Student</h2>
           <p>First time arrival guide
-			<li><a href="#">To-do-list</a></li>
-			<li><a href="quickguide/testing.pdf" data-ob="lightbox"> Places </a></li>
-			<li><a href="#">Food</a></li>
+			<ul>
+				<li><a href="quickguide/MalaysianLonghornStudentHandbook_20130907.pdf" data-ob="lightbox"> Student Handbook </a></li>
+				<li><a href="https://docs.google.com/document/d/1RWSbWPqhu7XbSksNSqpNPYcfle3VSlFZafVnyzInVFE/edit?pli=1">Contribute?</a></li>
+				<li><a href="contact_us/index.html">Feedback</a></li>
+			</ul>
 		  </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <h2>Organization</h2>
           <p>Malaysian Students Association
-		  	<li><a data-toggle="modal" href="#myMasaUTIntro">Introduction</a></li>
+		  	
 			
 			<!-- Organization Intro -->
 			<div class="modal fade" id="myMasaUTIntro" >
@@ -118,10 +138,41 @@
 				</div>
 			</div>
 			
-			<li><a href="#">Objective</a></li>
-			<li><a href="#">Members</a></li>
+			<!-- Tips and Sharing -->
+			<div class="modal fade" id="myTipsNSharing" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Related links:</h4>
+						</div>
+						<div class="modal-body">
+							<div class="row marketing">
+								<div class="col-lg-12">
+									<blockquote>
+									<p align="left">
+									<ul>
+										<li><a href="http://mrsaimun.blogspot.com/2013/08/6-must-dos-as-freshman-in-university-of.html" target="_blank" title="">6 Must-Do's as a Freshman in University of Texas</li>
+									</ul>
+									</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<ul>
+				<li><a data-toggle="modal" href="#myMasaUTIntro">Introduction</a></li>
+				<li><a href="#">Constitution (Soon)</a></li>
+				<li><a data-toggle="modal" href="#myTipsNSharing">Tips and Sharing</a></li>
+			</ul>
+		  
 		  </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
 		<div class="col-lg-4">
           <h2>About Malaysia</h2>
@@ -155,8 +206,6 @@
 				</div>
 			</div>
 			
-			<li><a data-toggle="modal" href="#myBriefIntro">Brief Intro</a></li>
-			
 			<!-- Modal for location -->
 			<div class="modal fade" id="myLocation" >
 				<div class="modal-dialog">
@@ -178,10 +227,12 @@
 				</div>
 			</div>
 			
-			<li><a data-toggle="modal" href="#myLocation" >Location</a></li>
-			<li><a href="https://en.wikipedia.org/wiki/Malaysia" target="_blank">Wiki</a></li>
+			<ul>
+				<li><a data-toggle="modal" href="#myBriefIntro">Brief Intro</a></li>
+				<li><a data-toggle="modal" href="#myLocation" >Location</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/Malaysia" target="_blank">Wiki</a></li>
+			</ul>
 		  </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
        </div>	  
 	  </div> 
 	  
@@ -192,7 +243,6 @@
           <h2>Bookmarks</h2>
           <p>Yo!,Check these out...
 			
-			<li><a href="http://deanofstudents.utexas.edu/sa/vieworgs.php?org=273">Official organization Info (DOS)</a></li>
 		  	<!-- Modal for Committee -->
 			<div class="modal fade" id="myCommittee" >
 				<div class="modal-dialog">
@@ -221,20 +271,22 @@
 				</div>
 			</div>
 			
-			<!--<li><a href="committees_page/index.html">Committee Members 2012/2013</a></li>-->
-			<li><a data-toggle="modal" href="#myCommittee">Committee Members</a></li>
-			<li><a href="https://www.facebook.com/groups/texasmasa/">FB (Texas MASA)</a></li>
+			<ul>
+				<li><a href="http://deanofstudents.utexas.edu/sa/vieworgs.php?org=273">Official organization Info (DOS)</a></li>
+				<li><a data-toggle="modal" href="#myCommittee">Committee Members</a></li>
+				<li><a href="https://www.facebook.com/groups/texasmasa/">FB (Texas MASA)</a></li>
+			</ul>
 		  </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <h2>Events</h2>
           <p>Awesomeeeeeeee!!!
-			<li><a href="#">UpComing</a></li>
-			<li><a href="#">Annual</a></li>
-			<li><a href="#">History</a></li>
+			<ul>
+				<li><a href="#">UpComing</a></li>
+				<li><a href="#">Annual</a></li>
+				<li><a href="#">History</a></li>
+			</ul>
 		  </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
 		<div class="col-lg-4">
           <h2>About UT</h2>
@@ -285,11 +337,12 @@
 				</div>
 			</div>
 			
-		  	<li><a data-toggle="modal" href="#myColleges">Colleges & Schools</a></li>
-			<li><a href="#">Majors</a></li>
-			<li><a href="https://en.wikipedia.org/wiki/University_of_Texas_at_Austin" target="_blank">Wiki</a></li>
+			<ul>
+				<li><a data-toggle="modal" href="#myColleges">Colleges & Schools</a></li>
+				<li><a href="#">Majors</a></li>
+				<li><a href="https://en.wikipedia.org/wiki/University_of_Texas_at_Austin" target="_blank">Wiki</a></li>
+			</ul>
 		  </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
        </div>
       </div>
 	  
@@ -344,7 +397,11 @@
 					</a>
 				</div>
 			</div>
-		</div><!--Container-->
+		</div><!--Narrow Container-->
+		<div class="container">
+			<hr>
+			<p><a href="https://github.com/kimyu92/UT-MASA" target="_blank"><font color="white">Credit/Development</font></a></p>		
+		</div>
       </div>
   </body>
 </html>
